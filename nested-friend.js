@@ -10,20 +10,28 @@ if you get less than 80 go to home and sleep and act sad
 Note: 
 use nested if-else-if-else
 */
-let myScore = 30; // Example score for myself
-let friendScore = 85; // Example score for my friend
+let myScore = 65; // Example score for myself
+let friendScore = 35; // Example score for my friend
 
-if (myScore > 80) {
-    if(friendScore > 80) {
-        console.log("Go for a lunch with your friend");
-    } else if(friendScore >= 60) {
-        console.log("Good luck next time, friend");
-    } else if(friendScore >= 40) {
-        console.log("Keep your friend's message unseen");
-    } else {
-        console.log("Block your friend");
-    }
+// if (myScore > 80) {
+//     if(friendScore > 80) {
+//         console.log("Go for a lunch with your friend");
+//     } else if(friendScore >= 60) {
+//         console.log("Good luck next time, friend");
+//     } else if(friendScore >= 40) {
+//         console.log("Keep your friend's message unseen");
+//     } else {
+//         console.log("Block your friend");
+//     }
 
-} else {
-    console.log("Go to home and sleep and act sad");
-}
+// } else {
+//     console.log("Go to home and sleep and act sad");
+// }
+    
+
+myScore > 80 ? 
+    friendScore > 80 ? console.log("Go for a lunch with your friend") :
+    friendScore >= 60 ? console.log("Good luck next time, friend") :
+    friendScore >= 40 ? console.log("Keep your friend's message unseen") :
+    console.log("Block your friend"): 
+console.log("Go to home and sleep and act sad");
