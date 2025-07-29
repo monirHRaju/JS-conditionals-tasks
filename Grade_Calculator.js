@@ -11,3 +11,16 @@ Create a simple JavaScript program that takes a student's score as input and ret
     F: 0-59
 
 ***/
+let grade = 60; // Example score to check the grade
+
+if(grade >= 90){
+    console.log("Grade: A");
+} else if(grade >= 80){
+    console.log("Grade: B");
+} else if(grade >= 70){
+    console.log("Grade: C");
+}else if(grade >= 60){
+    console.log("Grade: D");
+} else {
+    console.log("Grade: F");
+}
